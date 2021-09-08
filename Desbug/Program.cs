@@ -25,6 +25,7 @@ namespace PrimeiroProjeto
             //SegundaAula_Variaveis_Numeros();
             //TerceiraAula_Variaveis_CharBooleanVarObj();
             //QuartaAula_Const_Array_Struct();   //comandos do Console Write e Read//
+            //AprendendoAusarOConsole();
             //Exercício_inversão_deNomes();
             //Aula_Cinco_Conversao();
             Aula_Seis_();
@@ -98,8 +99,8 @@ namespace PrimeiroProjeto
 
         }
         public static void QuartaAula_Const_Array_Struct()
-         {
-             void Const(){ }
+        {
+            void Const() { }
             /*Aprendendo a reservar um valor usando o CONST*/
             // ao usar o CONST o valor definido na criação não pode ser alterado. serve para deixar a 
             // variavel privada de modificações de valor ou alterações
@@ -108,7 +109,7 @@ namespace PrimeiroProjeto
             const double PI = 3.14;
 
 
-              void Array(){ }
+            void Array() { }
             /*Classe Program*/
             // variavel global array
 
@@ -117,10 +118,10 @@ namespace PrimeiroProjeto
             Notas aluno3 = Notas.Maximo;
 
 
-             void Struct(){ }
+            void Struct() { }
             /* Estrutura = struct */
 
-            Pessoa p1 = new Pessoa();
+            Pessoa p1 = new Pessoa();           //Criando um obj com a Herança da Estrutura feita 
             p1.nome = "william";
             p1.idade = 20;
             p1.altura = 1.67;
@@ -129,9 +130,10 @@ namespace PrimeiroProjeto
             Console.ReadKey();   */
 
             //tambem é possivel referenciar os dados do escopo como um array definindo apenas pelo nome
-            // da variavel em questao {}; obrigatorio o uso do ponto e virgula ; no fechamento do array
-            
-            Pessoa p2 = new Pessoa() {nome = "segundo", idade = 25, altura = 1.70 };
+            //da variavel em questao "{ };" obrigatorio o uso do ponto e virgula ; no fechamento do array
+            //Exemplo a baixo da forma feita;
+
+            Pessoa p2 = new Pessoa() { nome = "segundo", idade = 25, altura = 1.70 };
 
             /*tambem é possivel escrever neste formato de quebra linha
              * {
@@ -144,48 +146,47 @@ namespace PrimeiroProjeto
             /*Console.WriteLine("nome " + p2.nome + " idade " + p2.idade + " altura " + p2.altura);
               Console.ReadKey();*/
 
-
-             void AprendendoAusarOConsole(){ }
-            //Metodo é caracterizado por ( abre e fecha ) "parenteses"
-
-            /* Console.WriteLine("alo"); //imprimir a String com quebra de linha
-            Console.Write("peido");     //imprimir a String sem a quebra de linha
-            Console.ReadKey();         //Pausa o console para ler uma tecla
-            Console.ReadLine();       //ReadLine espera uma tecla ser precionada para passar para proxima etapa
-            Console.Read(); */       //Read é usado para ler as teclas pressionadas e escritas no console
-
-            /* int codigo = Console.Read();
-             string texto = Console.ReadLine();
-             Console.WriteLine(texto);
-             Console.WriteLine(codigo); 
-             Console.Read(); */
-
-
         }
+        public static void AprendendoAusarOConsole() {
+                //Metodo é caracterizado por ( abre e fecha ) "parenteses"
+
+                /* Console.WriteLine("alo"); //imprimir a String com quebra de linha
+                Console.Write("peido");     //imprimir a String sem a quebra de linha
+                Console.ReadKey();         //Pausa o console para ler uma tecla
+                Console.ReadLine();       //ReadLine espera uma tecla ser precionada para passar para proxima etapa
+                Console.Read(); */       //Read é usado para ler as teclas pressionadas e escritas no console
+
+                /* int codigo = Console.Read();
+                 string texto = Console.ReadLine();
+                 Console.WriteLine(texto);
+                 Console.WriteLine(codigo); 
+                 Console.Read(); */
+            }
         public static void Exercício_inversão_deNomes()
         {
-            string nome1, nome2, nome3, nome4;
+            //string um1, dois2, tres3, quatro4, Auxiliar;
             /*
             Console.Write("digite os nome 1: ");
-            nome1 = Console.ReadLine();
+            um1 = Console.ReadLine();
 
             Console.Write("nome 2: ");
-            nome2 = Console.ReadLine();
+            dois2 = Console.ReadLine();
 
             Console.Write("nome 3: ");
-            nome3 = Console.ReadLine();
+            tres3 = Console.ReadLine();
 
             Console.Write("nome 4: ");
-            nome4 = Console.ReadLine();
+            quatro4 = Console.ReadLine();
             */
-            //invertendo os nomes;
-
-           string  Auxiliar = nome1;
-           nome1 = nome4;
-            nome4 = Auxiliar;
-            Auxiliar = nome2;
-            nome2 = nome3;
-            nome3 = Auxiliar;
+            //invertendo os nomes//
+            /*
+            Auxiliar = um1;
+            um1 = quatro4;
+            quatro4 = Auxiliar;
+            Auxiliar = dois2;
+            dois2 = tres3;
+            tres3 = Auxiliar;
+            */
             /*
             Console.WriteLine();
             Console.WriteLine("Nomes inseridos invertidos");
@@ -229,7 +230,7 @@ namespace PrimeiroProjeto
         }
         public static void Aula_Seis_()
         {
-            //https://github.com/WilliamLeite02/C-doInicio.git
+           
 
 
         }
