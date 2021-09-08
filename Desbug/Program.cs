@@ -28,8 +28,8 @@ namespace PrimeiroProjeto
             //AprendendoAusarOConsole();
             //Exercício_inversão_deNomes();
             //Aula_Cinco_Conversao();
-            Aula_Seis_();
-            
+            //Aula_Seis_ConversaoPerdaDeDados();
+            MetodoParse_ConversaoVariavel();
             // Projeto main William
 
         }
@@ -228,13 +228,31 @@ namespace PrimeiroProjeto
             Console.ReadKey();
                        
         }
-        public static void Aula_Seis_()
+        public static void Aula_Seis_ConversaoPerdaDeDados()
         {
-           
+            //Conversão Implicita com perda de dados//
 
+            ushort nume = 500;
+            byte numee = (byte)nume;    //acontece a perda de dados de 500 recebe 
+                                        //apenas 244; dos 500   
+            float num = 2500.76f;
+            int nu = (int)num;
+
+            Console.WriteLine(numee);
+            Console.ReadKey();
+        }
+        public static void MetodoParse_ConversaoVariavel()
+        {
+            string txtnumero = "2001";
+            int data = int.Parse(txtnumero);
+
+            byte dados = byte.Parse("33");
+            
+            Console.WriteLine(dados);
+            Console.WriteLine(data);
+            Console.ReadKey();
 
         }
-
 
 
 
