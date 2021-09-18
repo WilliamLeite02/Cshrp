@@ -1,0 +1,7 @@
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\obj\Debug\PrimeiroProjeto.csproj.CoreCompileInputs.cache
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\obj\Debug\Desbug.exe
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\obj\Debug\Desbug.pdb
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\bin\Debug\Desbug.exe.config
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\bin\Debug\Desbug.exe
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\bin\Debug\Desbug.pdb
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\obj\Debug\PrimeiroProjeto.csproj.AssemblyReference.cache
