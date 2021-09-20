@@ -8,15 +8,10 @@ namespace PrimeiroProjeto
 {
     class Programa
     {
-<<<<<<< HEAD
         #region array aula 4
         //Aula 4 const/ aray com variaveis globais;
         enum Notas {Minimo = 1, Medio = 6, Maximo = 10 }
         #endregion
-=======
-        //Aula 4 const/ aray com variaveis globais;
-        enum Notas {Minimo, Medio, Maximo }
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
 
         //Estrutura
         struct Pessoa
@@ -25,28 +20,20 @@ namespace PrimeiroProjeto
             public int idade;
             public double altura;
         }
-
         static void Main(string[] args)
         {
             //PrimeiraAula_Region_Console();
             //SegundaAula_Variaveis_Numeros();
             //TerceiraAula_Variaveis_CharBooleanVarObj();
-            //QuartaAula_Const_Array_Struct();   //comandos do Console Write e Read//
-            //AprendendoAusarOConsole();
-<<<<<<< HEAD
-            Exercício_inversão_deNomes();
-            //Aula_Cinco_Conversao();
-            //Aula_Seis_ConversaoPerdaDeDados();
-            /////MetodoParse_ConversaoVariavel();
-=======
+            //QuartaAula_Const_Array_Struct();   
+            //AprendendoAusarOConsole();                 //comandos do Console Write e Read//
             //Exercício_inversão_deNomes();
             //Aula_Cinco_Conversao();
             //Aula_Seis_ConversaoPerdaDeDados();
             MetodoParse_ConversaoVariavel();
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
-            // Projeto main William
 
-        }
+            // Projeto main William
+         }
         public static void PrimeiraAula_Region_Console()
         {
             //Bloco Region para que serve?
@@ -118,34 +105,25 @@ namespace PrimeiroProjeto
             /*Aprendendo a reservar um valor usando o CONST*/
             // ao usar o CONST o valor definido na criação não pode ser alterado. serve para deixar a 
             // variavel privada de modificações de valor ou alterações
-
-<<<<<<< HEAD
+             
             const string nome = "williamlt";
-=======
-            const string nome = "williaml";
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             const double PI = 3.14;
 
-
-            void Array() { }
-            /*Classe Program*/
-            // variavel global array
-
+            void Array() { }                                                        /*Classe Program*/
+                                                                                // variavel global array//
             Notas notasAlunos = Notas.Minimo;
             Notas aluno2 = Notas.Medio;
-            Notas aluno3 = Notas.Maximo;
-
-
-            void Struct() { }
-            /* Estrutura = struct */
-
-            Pessoa p1 = new Pessoa();           //Criando um obj com a Herança da Estrutura feita 
+            Notas aluno3 = Notas.Maximo;                                            
+                       
+            void Struct() { }      /* Estrutura = struct */
+           //Criando um obj com a Herança da Estrutura feita 
+            Pessoa p1 = new Pessoa();          
             p1.nome = "william";
             p1.idade = 20;
             p1.altura = 1.67;
 
-            /*Console.WriteLine("nome " + p1.nome + " idade " + p1.idade +" altura "+  p1.altura);
-            Console.ReadKey();   */
+            Console.WriteLine("nome " + p1.nome + " idade " + p1.idade +" altura "+  p1.altura);
+            Console.ReadKey();   
 
             //tambem é possivel referenciar os dados do escopo como um array definindo apenas pelo nome
             //da variavel em questao "{ };" obrigatorio o uso do ponto e virgula ; no fechamento do array
@@ -153,37 +131,36 @@ namespace PrimeiroProjeto
 
             Pessoa p2 = new Pessoa() { nome = "segundo", idade = 25, altura = 1.70 };
 
-            /*tambem é possivel escrever neste formato de quebra linha
-             * {
+            //tambem é possivel escrever neste formato de quebra linha
+              /*{
                 nome = "will",
                 idade = 20,
                 altura = 1.67
-              };
-             */
-
-            /*Console.WriteLine("nome " + p2.nome + " idade " + p2.idade + " altura " + p2.altura);
-              Console.ReadKey();*/
+              };*/
+             
+            Console.WriteLine("nome " + p2.nome + " idade " + p2.idade + " altura " + p2.altura);
+              Console.ReadKey();
 
         }
         public static void AprendendoAusarOConsole() {
                 //Metodo é caracterizado por ( abre e fecha ) "parenteses"
 
-                /* Console.WriteLine("alo"); //imprimir a String com quebra de linha
+                Console.WriteLine("alo");    //imprimir a String com quebra de linha
                 Console.Write("peido");     //imprimir a String sem a quebra de linha
                 Console.ReadKey();         //Pausa o console para ler uma tecla
                 Console.ReadLine();       //ReadLine espera uma tecla ser precionada para passar para proxima etapa
-                Console.Read(); */       //Read é usado para ler as teclas pressionadas e escritas no console
+                Console.Read();          //Read é usado para ler as teclas pressionadas e escritas no console
 
-                /* int codigo = Console.Read();
+                 int codigo = Console.Read();
                  string texto = Console.ReadLine();
                  Console.WriteLine(texto);
                  Console.WriteLine(codigo); 
-                 Console.Read(); */
+                 Console.Read(); 
             }
         public static void Exercício_inversão_deNomes()
         {
             //string um1, dois2, tres3, quatro4, Auxiliar;
-<<<<<<< HEAD
+
             string um1, dois2, tres3, quatro4, Auxiliar;
             
 
@@ -198,58 +175,25 @@ namespace PrimeiroProjeto
 
             Console.Write("digite o numero 4: ");
             quatro4 = Console.ReadLine();
-            
+           
             //invertendo os nomes//
-            
-=======
-            /*
-            Console.Write("digite os nome 1: ");
-            um1 = Console.ReadLine();
-
-            Console.Write("nome 2: ");
-            dois2 = Console.ReadLine();
-
-            Console.Write("nome 3: ");
-            tres3 = Console.ReadLine();
-
-            Console.Write("nome 4: ");
-            quatro4 = Console.ReadLine();
-            */
-            //invertendo os nomes//
-            /*
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             Auxiliar = um1;
             um1 = quatro4;
             quatro4 = Auxiliar;
             Auxiliar = dois2;
             dois2 = tres3;
             tres3 = Auxiliar;
-<<<<<<< HEAD
-            
-            
+
+            //nome invertidos OutPut            
             Console.WriteLine();
             Console.WriteLine("Nomes inseridos invertidos");
             Console.WriteLine(um1);
             Console.WriteLine(dois2);
             Console.WriteLine(tres3);
             Console.WriteLine(quatro4);
-
             Console.ReadKey();
-            
-=======
-            */
-            /*
-            Console.WriteLine();
-            Console.WriteLine("Nomes inseridos invertidos");
-            Console.WriteLine(nome1);
-            Console.WriteLine(nome2);
-            Console.WriteLine(nome3);
-            Console.WriteLine(nome4);
+           //rodou do jeito que foi feito no EAD//
 
-            Console.ReadKey();
-            */
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
-            //rodou do jeito que foi feito no EAD//
         }
         public static void Aula_Cinco_Conversao()
         {
@@ -263,7 +207,7 @@ namespace PrimeiroProjeto
             nume3 = nume1;
 
             int numero = 'C';
-            Console.WriteLine(numero);
+           Console.WriteLine(numero);
            Console.ReadKey();
 
             //conversao com possivel perda de dados;
@@ -283,24 +227,19 @@ namespace PrimeiroProjeto
         public static void Aula_Seis_ConversaoPerdaDeDados()
         {
             //Conversão Implicita com perda de dados//
-
-<<<<<<< HEAD
             ushort numero1 = 500;
             byte numero = (byte)numero1;    //acontece a perda de dados de 500 recebe 
-=======
+
             ushort nume = 500;
             byte numee = (byte)nume;    //acontece a perda de dados de 500 recebe 
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
                                         //apenas 244; dos 500   
+
             float num = 2500.76f;
             int nu = (int)num;
 
-<<<<<<< HEAD
             Console.WriteLine(numero);
-            Console.WriteLine(nu);
-=======
             Console.WriteLine(numee);
->>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
+            Console.WriteLine(nu);
             Console.ReadKey();
         }
         public static void MetodoParse_ConversaoVariavel()
@@ -321,19 +260,3 @@ namespace PrimeiroProjeto
     }
 }
  
-             
- 
-        
-
-    
-
-
-
-
-
-
-
-
-
-
-
