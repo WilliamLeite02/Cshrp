@@ -1,0 +1,1 @@
+C:\MeusProjetos\Visual Studio 2019\Csharp\Desbug\Desbug\obj\Release\PrimeiroProjeto.csproj.CoreCompileInputs.cache
