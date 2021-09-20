@@ -8,10 +8,15 @@ namespace PrimeiroProjeto
 {
     class Programa
     {
+<<<<<<< HEAD
         #region array aula 4
         //Aula 4 const/ aray com variaveis globais;
         enum Notas {Minimo = 1, Medio = 6, Maximo = 10 }
         #endregion
+=======
+        //Aula 4 const/ aray com variaveis globais;
+        enum Notas {Minimo, Medio, Maximo }
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
 
         //Estrutura
         struct Pessoa
@@ -28,10 +33,17 @@ namespace PrimeiroProjeto
             //TerceiraAula_Variaveis_CharBooleanVarObj();
             //QuartaAula_Const_Array_Struct();   //comandos do Console Write e Read//
             //AprendendoAusarOConsole();
+<<<<<<< HEAD
             Exercício_inversão_deNomes();
             //Aula_Cinco_Conversao();
             //Aula_Seis_ConversaoPerdaDeDados();
             /////MetodoParse_ConversaoVariavel();
+=======
+            //Exercício_inversão_deNomes();
+            //Aula_Cinco_Conversao();
+            //Aula_Seis_ConversaoPerdaDeDados();
+            MetodoParse_ConversaoVariavel();
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             // Projeto main William
 
         }
@@ -107,7 +119,11 @@ namespace PrimeiroProjeto
             // ao usar o CONST o valor definido na criação não pode ser alterado. serve para deixar a 
             // variavel privada de modificações de valor ou alterações
 
+<<<<<<< HEAD
             const string nome = "williamlt";
+=======
+            const string nome = "williaml";
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             const double PI = 3.14;
 
 
@@ -167,6 +183,7 @@ namespace PrimeiroProjeto
         public static void Exercício_inversão_deNomes()
         {
             //string um1, dois2, tres3, quatro4, Auxiliar;
+<<<<<<< HEAD
             string um1, dois2, tres3, quatro4, Auxiliar;
             
 
@@ -184,12 +201,30 @@ namespace PrimeiroProjeto
             
             //invertendo os nomes//
             
+=======
+            /*
+            Console.Write("digite os nome 1: ");
+            um1 = Console.ReadLine();
+
+            Console.Write("nome 2: ");
+            dois2 = Console.ReadLine();
+
+            Console.Write("nome 3: ");
+            tres3 = Console.ReadLine();
+
+            Console.Write("nome 4: ");
+            quatro4 = Console.ReadLine();
+            */
+            //invertendo os nomes//
+            /*
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             Auxiliar = um1;
             um1 = quatro4;
             quatro4 = Auxiliar;
             Auxiliar = dois2;
             dois2 = tres3;
             tres3 = Auxiliar;
+<<<<<<< HEAD
             
             
             Console.WriteLine();
@@ -201,6 +236,19 @@ namespace PrimeiroProjeto
 
             Console.ReadKey();
             
+=======
+            */
+            /*
+            Console.WriteLine();
+            Console.WriteLine("Nomes inseridos invertidos");
+            Console.WriteLine(nome1);
+            Console.WriteLine(nome2);
+            Console.WriteLine(nome3);
+            Console.WriteLine(nome4);
+
+            Console.ReadKey();
+            */
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             //rodou do jeito que foi feito no EAD//
         }
         public static void Aula_Cinco_Conversao()
@@ -236,14 +284,23 @@ namespace PrimeiroProjeto
         {
             //Conversão Implicita com perda de dados//
 
+<<<<<<< HEAD
             ushort numero1 = 500;
             byte numero = (byte)numero1;    //acontece a perda de dados de 500 recebe 
+=======
+            ushort nume = 500;
+            byte numee = (byte)nume;    //acontece a perda de dados de 500 recebe 
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
                                         //apenas 244; dos 500   
             float num = 2500.76f;
             int nu = (int)num;
 
+<<<<<<< HEAD
             Console.WriteLine(numero);
             Console.WriteLine(nu);
+=======
+            Console.WriteLine(numee);
+>>>>>>> 41e65501086f37d15b14b9721173d97e30cec212
             Console.ReadKey();
         }
         public static void MetodoParse_ConversaoVariavel()
