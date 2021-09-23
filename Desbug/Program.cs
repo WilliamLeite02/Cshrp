@@ -26,11 +26,11 @@ namespace PrimeiroProjeto
             //SegundaAula_Variaveis_Numeros();
             //TerceiraAula_Variaveis_CharBooleanVarObj();
             //QuartaAula_Const_Array_Struct();   
-            //AprendendoAusarOConsole();                 //comandos do Console Write e Read//
+            //AprendendoAusarOConsole();          /*comandos do Console Write e Read*/
             //Exercício_inversão_deNomes();
             //Aula_Cinco_Conversao();
-            //Aula_Seis_ConversaoPerdaDeDados();
-            MetodoParse_ConversaoVariavel();
+            //MetodoParse_ConversaoVariavel();
+            MetodoConvert_ConversaoToString();
 
             // Projeto main William
          }
@@ -197,38 +197,44 @@ namespace PrimeiroProjeto
         }
         public static void Aula_Cinco_Conversao()
         {
+        #region Conversão para variáveis com suporte maior do que o original
+           
             byte nume1 = 100;  // 8 bits de 0 a 255
-            ushort nume2;      // 16 bits de 0 a 65.0000
-            nume2 = nume1;     // a variavel ushort suporta os dados da variavel byte 
-                               // pois ela tem uma capaciadade maior;
+            ushort nume2 = nume1;      // 16 bits de 0 a 65.0000
+            //numero2 recebe numero1 sendo byte mas virando ushort 
+            // a variavel ushort suporta os dados da variavel byte 
+            // pois ela tem uma capaciadade maior;
 
             float nume3 = 1250.44f;
             double nume4 = nume3;
-            nume3 = nume1;
-
-            int numero = 'C';
-           Console.WriteLine(numero);
-           Console.ReadKey();
-
-            //conversao com possivel perda de dados;
-            ushort number1 = 100;
-            byte number2 = (byte) number1;
             
+            nume3 = nume1;      //o mesmo acontece com o float
+
+            int numero = 'C';    //o valor de "C" é de 67 sendo entao INT
+            Console.WriteLine(numero);
+            Console.ReadKey();
+            #endregion
+        
+        #region Conversão com possivel perda de dados porque a variável nao suporta
+           
+            ushort number1 = 100;               //para fazer o uso é necessário por a
+            byte number2 = (byte) number1;     //varialvel destacada "(byte)"                 
             Console.WriteLine(number2);
             Console.ReadKey();
 
-            double numenber4 = -33.44;
-            char letra = (char) 97;  
-            
-            Console.WriteLine(letra);
+            float numero3 = 2500.767f;      //perda das casas decimais
+            int numero4 = (int)numero3;
+            Console.WriteLine(numero4);
             Console.ReadKey();
-                       
-        }
-        public static void Aula_Seis_ConversaoPerdaDeDados()
-        {
-            //Conversão Implicita com perda de dados//
+
+            char letra = (char)97;       //a conversao sera para o codigo 97 
+            Console.WriteLine(letra);   //assim mostrando a letra a
+            Console.ReadKey();
+            #endregion
+
+        #region Conversão com perda de dados
             ushort numero1 = 500;
-            byte numero = (byte)numero1;    //acontece a perda de dados de 500 recebe 
+            byte numero5 = (byte)numero1;    //acontece a perda de dados de 500 recebe 
 
             ushort nume = 500;
             byte numee = (byte)nume;    //acontece a perda de dados de 500 recebe 
@@ -237,21 +243,29 @@ namespace PrimeiroProjeto
             float num = 2500.76f;
             int nu = (int)num;
 
-            Console.WriteLine(numero);
+            Console.WriteLine(numero5);
             Console.WriteLine(numee);
             Console.WriteLine(nu);
             Console.ReadKey();
+        #endregion
+
         }
         public static void MetodoParse_ConversaoVariavel()
         {
-            string txtnumero = "2001";
-            int data = int.Parse(txtnumero);
-
-            byte dados = byte.Parse("33");
-            
-            Console.WriteLine(dados);
+            string txtnumero = "2001";           //string para Inteiro  "int"
+            int data = int.Parse(txtnumero);    //nao é permitido por letras para converter 
+                                                        
+            byte dados = (byte) ushort.Parse("188");   //a variavel byte é suporta 
+                                                       //menos que a ushort 
             Console.WriteLine(data);
+            Console.WriteLine(dados);
             Console.ReadKey();
+
+        }
+        public static void MetodoConvert_ConversaoToString()
+        {
+
+
 
         }
 
